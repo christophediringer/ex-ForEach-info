@@ -1,0 +1,138 @@
+/* Ou la couleur de ton choix */
+
+@font-face {
+  font-family: Chunk;
+  src: url(./);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: #fff; 
+  }
+  
+  .menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu span {
+    padding: 0.5em;
+    background-color: black; 
+    color: white; 
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #site-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  #site-title h1 {
+    font-size: 2em; 
+    margin: 0;
+    margin-right: 0.5em; 
+  }
+  
+  #subscribe-button button {
+    padding: 0.5rem 1rem;
+    background-color: #f0c14b; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* main */
+  /* catégorie du main */
+  .category-nav {
+    background-color: #cccccc; 
+    padding: 1em 0; /* Padding vertical seulement */
+  }
+  
+  .category-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 1em; /* Ajout d'une marge horizontale pour l'alignement */
+    display: flex;
+    justify-content: space-between; /* Répartit les éléments sur toute la largeur avec un espace entre eux */
+    text-align: center; /* Assure que le texte est centré si les liens sont plus larges que leur contenu */
+    height: 100%;
+  }
+  
+  .category-nav li {
+    flex: 1; /* Donne à chaque élément de liste une flexibilité pour occuper l'espace de façon égale */
+    display: flex;
+    justify-content: center; /* Centre le lien dans l'élément de liste pour les grands liens */
+  }
+  
+  .category-nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    padding: 0 0.5em; /* Ajoute un padding horizontal */
+  }
+  
+  .category-section {
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-around; 
+    padding: 0 1em; 
+  }
+  /* boite avec les images, scroll */
+
+  .container {
+    display: flex;
+    background-color: #3F5290; 
+    color: black; 
+    }
+  .section {
+    background-color:#264029;
+    display: flex;
+    align-items: center; 
+    margin: 10px; 
+  }
+  .image-container {
+    margin-right: 10px; 
+  }
+  .image-container img {
+    display: block; /* Empêche les marges par défaut */
+    width: 150px; /* Largeur de l'image, à ajuster */
+    height: auto; /* Maintient le ratio aspect de l'image */
+  }
+  .text-container {
+    flex-grow: 1; /* Permet au texte de remplir l'espace restant */
+    padding: 10px; 
+    background-color: #2C6269; 
+    border-radius: 5px; /* Arrondi les coins de la zone de texte */
+  }
+  
